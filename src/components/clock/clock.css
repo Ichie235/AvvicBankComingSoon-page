@@ -121,3 +121,31 @@
     transform-origin: bottom;
   }
   
+  @media screen and (max-width: 576px) {  
+.clock {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75%;
+}
+
+.hour-hand {
+  height: 50px;
+}
+
+.minute-hand {
+  height: 70px;
+}
+
+.second-hand {
+  height: 90px;
+}
+.minute-line {
+  height: 12px;
+  /* transform: translate(-50%, -1000%) !important; */
+}
+  }

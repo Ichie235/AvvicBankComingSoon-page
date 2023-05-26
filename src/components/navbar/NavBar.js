@@ -15,9 +15,11 @@ const Navbar = () => {
       <div className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul className="navbar-nav">
           <li className="nav-item"><a href="#home">Home</a></li>
-          <li className="nav-item"><a href="#about">About</a></li>
-          <li className="nav-item"><a href="#services">Services</a></li>
-          <li className="nav-item"><a href="#contact">Contact</a></li>
+          <li className="nav-item">
+            <button>
+            <a href="#about">Get Notified</a>
+            </button>
+            </li>
         </ul>
       </div>
 
