@@ -81,9 +81,8 @@ export class comingSoon extends Component {
                 <div>
                   <h3 className="info-content-heading">Secure</h3>
                   <p className="info-content">
-                    We employ robust encryption protocols and <br /> stringent
-                    security measures to safeguard <br /> your personal
-                    information and transactions.
+                    We employ robust encryption protocols and stringent
+                    security measures to safeguard your personal information and transactions.
                   </p>
                 </div>
               </Zoom>
@@ -96,8 +95,8 @@ export class comingSoon extends Component {
                 <div>
                   <h3 className="info-content-heading">Fast</h3>
                   <p className="info-content">
-                    Our fast-paced operations ensure that you <br /> can carry
-                    out your banking activities swiftly <br /> and conveniently,
+                    Our fast-paced operations ensure that you can carry
+                    out your banking activities swiftly and conveniently,
                     saving you precious time.
                   </p>
                 </div>

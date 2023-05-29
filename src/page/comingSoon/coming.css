@@ -16,6 +16,7 @@
   background-image: url(../../assests/images/avvic-hero-3-min.png);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .hero-content-container{
@@ -59,6 +60,7 @@
 .info-container {
   height: 94vh;
   background: linear-gradient(90deg, #fffeff 0%, #d7fffe 100%);
+  overflow-x: hidden;
 }
 .info-heading {
   font-size: 48px;
@@ -211,7 +213,7 @@
     height: 99vh;
   }
   .social-mediaIcon-container{
-    margin-top: 176%;
+    margin-top: 163%;
     gap: 46px;
    
   }
@@ -231,6 +233,7 @@
   }
    .info-container{
     height: 170vh;
+    overflow-x: hidden;
    }
   .info-content-container {
     display: block;
@@ -255,20 +258,21 @@
   .info-content {
     padding: 5px;
     line-height: 28px;
-    text-align: left;
-    padding: 5px;
+    text-align: justify;
+    padding: 18px;
   }
   .footer-container{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
+    overflow-x: hidden;
   }
   .footer-heading {
     padding-left: 11px;
   }
   .footer-content {
-    padding-left: 10px;
+    padding: 18px;
   }
   
 .contact-us{
@@ -280,7 +284,7 @@
 .contact-form {
   width: 250px;
   height: 42px;
-  padding: 7px;
+  padding: 18px;
 }
 .contact-btn {
   width: 72px;
