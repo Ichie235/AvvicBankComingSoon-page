@@ -43,7 +43,7 @@ const RoundClock = () => {
         <div
           key={index}
           className="minute-line"
-          style={{ transform: `rotate(${index * 150}deg) translate(-50%, -1400%)` }}
+          style={{ transform: `rotate(${index * 150}deg) translate(-50%, -1050%)` }}
         />
       ))}
 

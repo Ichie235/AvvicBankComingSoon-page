@@ -11,50 +11,41 @@
 .hero-container {
   position: relative;
   width: 100%;
-  height: 110vh;
-  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  height: 105vh;
+  /* background: linear-gradient(90deg, #29323c 0%, #485563 100%); */
+  background-image: url(../../assests/images/avvic-hero-3-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-content-container{
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 20%;
+  margin-top: 17%;
   color: #fff;
   font-size: 14px;
   letter-spacing: 8px;
 }
 .hero-content-heading{
-  font-size: 55px;
+  font-size: 45px;
   padding-top: 13px;
   padding-bottom: 13px;
   letter-spacing: 18px;
 }
-/* 
-THE COMMENTED PIECE OF CODE BELOW IS NOT CUREENTLY BEEN USED */
 
-/* 
-.hero-clock,
-.heroText,
-.hero-image {
+.social-mediaIcon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0px auto 0px;
+  margin-top: 46%;
+  gap: 45px;
+  width: 100%;
 }
-.hero-clock {
-  top: 16%;
-}
-.heroText {
-  top: 40%;
-  color: #ffff;
-  font-size: 18px;
-  text-align: center;
-  line-height: 21.6px;
-}
-.hero-image {
-  top: 50%;
-} */
+
 .avvic-logo-2-container{
   display: flex;
   justify-content: flex-start;
@@ -206,18 +197,25 @@ THE COMMENTED PIECE OF CODE BELOW IS NOT CUREENTLY BEEN USED */
 @media screen and (max-width: 576px) { 
   .hero-content-container{
     margin-top: 60%;
-    font-size: 12px;
+    font-size: 10px;
   }
   .hero-content-heading{
-    font-size: 40px;
+    font-size: 35px;
     padding-top: 9px;
+    text-align: center;
     padding-bottom: 11px;
-    letter-spacing: 15px;
+    letter-spacing: 13px;
   }
   .hero-container{
     overflow-x: hidden;
-    height: 105vh;
+    height: 99vh;
   }
+  .social-mediaIcon-container{
+    margin-top: 176%;
+    gap: 46px;
+   
+  }
+  
   .avvic-logo-2{
     width: 186px;
     height: 60px;

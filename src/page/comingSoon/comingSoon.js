@@ -16,7 +16,11 @@ import Facebook from "../../assests/images/Facebook.png";
 import Instagram from "../../assests/images/Instagram.png";
 import LinkedIn from "../../assests/images/LinkedIn.png";
 import Twitter from "../../assests/images/Twitter.png";
-
+import {
+  UilFacebookF,
+  UilTwitterAlt,
+  UilInstagram,
+} from "@iconscout/react-unicons";
 export class comingSoon extends Component {
   render() {
     return (
@@ -26,29 +30,37 @@ export class comingSoon extends Component {
             <RoundClock />
             <div className="hero-content-container">
               <Slide>
-                <p>OUR NEW SITE IS</p>
+                <p>
+                  SOMETHING AWESOME <br /> IS
+                </p>
               </Slide>
               <Slide direction={"right"}>
                 <h1 className="hero-content-heading">
-                  COMING <br /> SOON
+                  COMING <br />{" "}
+                  <span style={{ letterSpacing: "2px" }}> SOON!!</span>
                 </h1>
               </Slide>
               <p className="hero-content">STAY TUNED</p>
             </div>
-            {/* <figure>
-              <img src={HeroClock} className="hero-clock"></img>
-            </figure> */}
-            {/* <div className="heroText">
-              <p>
-                We are working hard to improve our website and we’ll be ready to{" "}
-                <br></br> launch soon!
-              </p>
+          </div>
+          <div className="social-mediaIcon-container">
+            <div className="social-column">
+              {" "}
+              <Zoom>
+              <UilFacebookF color="#CDDAD5" size="35" />
+              </Zoom>
             </div>
-            <div>
-              <figure>
-                <img src={HeroImage} className="hero-image"></img>
-              </figure>
-            </div> */}
+            <div className="social-column">
+              {" "}
+              <Zoom>
+              <UilTwitterAlt color="#CDDAD5" size="35" />
+              </Zoom>
+            </div>
+            <div className="social-column">
+              <Zoom>
+              <UilInstagram color="#CDDAD5" size="35"/>
+              </Zoom>
+            </div>
           </div>
         </section>
         <section className="info-container">
