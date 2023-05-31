@@ -6,28 +6,27 @@ import RoundClock from "../../components/clock/clock";
 import { Slide, Zoom } from "react-awesome-reveal";
 
 // IMPORTED IMAGES AND ICON
-import HeroClock from "../../assests/images/heroClock.png";
-import HeroImage from "../../assests/images/hero-image.png";
 import fastIcon from "../../assests/images/fastIcon.png";
 import secureIcon from "../../assests/images/secureIcon.png";
 import supportIcon from "../../assests/images/supportIcon.png";
 import avvicLogo2 from "../../assests/images/avvicLogo-2.png";
-import Facebook from "../../assests/images/Facebook.png";
-import Instagram from "../../assests/images/Instagram.png";
-import LinkedIn from "../../assests/images/LinkedIn.png";
-import Twitter from "../../assests/images/Twitter.png";
 import {
   UilFacebookF,
   UilTwitterAlt,
   UilInstagram,
+  UilLinkedinAlt,
+  UilWhatsapp,
 } from "@iconscout/react-unicons";
+
 export class comingSoon extends Component {
   render() {
     return (
       <div className="coming">
         <section className="hero-container">
           <div>
+            {/* Below is the Analog Clock Component */}
             <RoundClock />
+
             <div className="hero-content-container">
               <Slide>
                 <p>
@@ -47,18 +46,55 @@ export class comingSoon extends Component {
             <div className="social-column">
               {" "}
               <Zoom>
-              <UilFacebookF color="#CDDAD5" size="35" />
+                <a
+                  href="https://web.facebook.com/avvicconsults/?_rdc=1&_rdr"
+                  target={"_blank"}  rel="noreferrer" 
+                >
+                  {" "}
+                  <UilFacebookF color="#CDDAD5" size="30" />
+                </a>
               </Zoom>
             </div>
             <div className="social-column">
               {" "}
               <Zoom>
-              <UilTwitterAlt color="#CDDAD5" size="35" />
+                <a
+                  href="https://api.whatsapp.com/send/?phone=2348101098488&text&type=phone_number&app_absent=0"
+                  target={"_blank"}  rel="noreferrer" 
+                >
+                  {" "}
+                  <UilWhatsapp color="#CDDAD5" size="30" />
+                </a>
               </Zoom>
             </div>
             <div className="social-column">
               <Zoom>
-              <UilInstagram color="#CDDAD5" size="35"/>
+                <a
+                  href="https://www.instagram.com/avvicgroup/"
+                  target={"_blank"}  rel="noreferrer" 
+                >
+                  {" "}
+                  <UilInstagram color="#CDDAD5" size="30" />
+                </a>
+              </Zoom>
+            </div>
+            <div className="social-column">
+              <Zoom>
+                <a href="https://twitter.com/avvicgroup" target={"_blank"}  rel="noreferrer" >
+                  {" "}
+                  <UilTwitterAlt color="#CDDAD5" size="30" />
+                </a>
+              </Zoom>
+            </div>
+            <div className="social-column">
+              <Zoom>
+                <a
+                  href="https://www.linkedin.com/in/avvic-group-1b2b81231/"
+                  target={"_blank"}  rel="noreferrer" 
+                >
+                  {" "}
+                  <UilLinkedinAlt color="#CDDAD5" size="30" />
+                </a>
               </Zoom>
             </div>
           </div>
@@ -76,13 +112,18 @@ export class comingSoon extends Component {
             <div class="column">
               <Zoom>
                 <figure>
-                  <img src={secureIcon} className="icon"></img>
+                  <img
+                    src={secureIcon}
+                    className="icon"
+                    alt="secure transaction icon"
+                  ></img>
                 </figure>
                 <div>
                   <h3 className="info-content-heading">Secure</h3>
                   <p className="info-content">
-                    We employ robust encryption protocols and stringent
-                    security measures to safeguard your personal information and transactions.
+                    We employ robust encryption protocols and stringent security
+                    measures to safeguard your personal information and
+                    transactions.
                   </p>
                 </div>
               </Zoom>
@@ -90,14 +131,18 @@ export class comingSoon extends Component {
             <div class="column">
               <Zoom>
                 <figure>
-                  <img src={fastIcon} className="icon"></img>
+                  <img
+                    src={fastIcon}
+                    className="icon"
+                    alt="fast transaction icon"
+                  ></img>
                 </figure>
                 <div>
                   <h3 className="info-content-heading">Fast</h3>
                   <p className="info-content">
-                    Our fast-paced operations ensure that you can carry
-                    out your banking activities swiftly and conveniently,
-                    saving you precious time.
+                    Our fast-paced operations ensure that you can carry out your
+                    banking activities swiftly and conveniently, saving you
+                    precious time.
                   </p>
                 </div>
               </Zoom>
@@ -105,7 +150,7 @@ export class comingSoon extends Component {
             <div class="column">
               <Zoom>
                 <figure>
-                  <img src={supportIcon} className="icon"></img>
+                  <img src={supportIcon} className="icon" alt="bank support"></img>
                 </figure>
                 <div>
                   <h3 className="info-content-heading">Support</h3>
@@ -120,9 +165,14 @@ export class comingSoon extends Component {
             </div>
           </div>
         </section>
+        {/* THE SECTION BELOW IS FOR THE SECOND AVVIC LOGO DESIGN */}
         <section className="avvic-logo-2-container">
           <figure>
-            <img src={avvicLogo2} className="avvic-logo-2"></img>
+            <img
+              src={avvicLogo2}
+              className="avvic-logo-2"
+              alt="Avvic logo for footer"
+            ></img>
           </figure>
         </section>
         <section className="footer-container">
@@ -158,10 +208,10 @@ export class comingSoon extends Component {
                 info@avvicgroup.com <br /> +2348149316300
               </p>
               <div className="footer-icons">
-                <img src={Facebook}></img>
-                <img src={Instagram}></img>
-                <img src={LinkedIn}></img>
-                <img src={Twitter}></img>
+                <UilFacebookF />
+                <UilTwitterAlt />
+                <UilInstagram />
+                <UilLinkedinAlt />
               </div>
             </Slide>
           </div>

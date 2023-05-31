@@ -9,17 +9,15 @@
 }
 
 .hero-container {
-  position: relative;
   width: 100%;
   height: 105vh;
-  /* background: linear-gradient(90deg, #29323c 0%, #485563 100%); */
-  background-image: url(../../assests/images/avvic-hero-3-min.png);
+  background-image: url(../../assests/images/avvic-hero-3.png);
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
 
-.hero-content-container{
+.hero-content-container {
   position: absolute;
   left: 0;
   right: 0;
@@ -28,33 +26,46 @@
   font-size: 14px;
   letter-spacing: 8px;
 }
-.hero-content-heading{
+.hero-content-heading {
   font-size: 45px;
   padding-top: 13px;
   padding-bottom: 13px;
   letter-spacing: 18px;
 }
 
-.social-mediaIcon-container{
+.social-mediaIcon-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 59%;
-  gap: 45px;
+  margin-top: 41.3em;
+  gap: 0.6em;
   width: 100%;
 }
-
-.avvic-logo-2-container{
-  display: flex;
-  justify-content: flex-start;
+.social-column {
+  padding: 4px;
+  border-radius: 5px;
+  transition: transform 0.2s;
 }
-.avvic-logo-2{
-  width: 196px;
-  height: 64px;
-  margin-left: 20px;
+.social-column:nth-child(1) {
+  background-color: blue;
+}
+.social-column:nth-child(2) {
+  background-color: rgb(17, 158, 17);
+}
+.social-column:nth-child(3) {
+  background-color: purple;
+}
+.social-column:nth-child(4) {
+  background-color: rgb(91, 160, 238);
+}
+.social-column:nth-child(5) {
+  background-color: rgb(21, 21, 133);
+}
+.social-column:hover {
+  transform: scale(1.2);
 }
 /* SECTION FOR SEAMLESS BANKING */
 .info-container {
@@ -106,9 +117,19 @@
   line-height: 24px;
 }
 
+.avvic-logo-2-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.avvic-logo-2 {
+  width: 196px;
+  height: 64px;
+  margin-left: 20px;
+}
+
 .footer-container {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-start;
   margin-top: 1%;
   width: 100%;
@@ -116,11 +137,9 @@
 .footer-column:nth-child(1),
 .footer-column:nth-child(2) {
   flex: 2;
-  /* border: 1px solid black; */
 }
 .footer-column:nth-child(3) {
   flex: 1;
-  /* border: 1px solid black; */
 }
 .footer-heading {
   font-weight: 500;
@@ -178,47 +197,50 @@
   height: 1px;
   background-color: black !important;
 }
-.divider-content{
+.divider-content {
   display: flex;
   justify-content: flex-start;
 }
-.divider-content-item:nth-child(1){
+.divider-content-item:nth-child(1) {
   flex: 2.6;
   text-align: left;
   padding-top: 20px;
   font-size: 14px;
 }
-.divider-content-item:nth-child(2),.divider-content-item:nth-child(3){
+.divider-content-item:nth-child(2),
+.divider-content-item:nth-child(3) {
   flex: 0.4;
   text-align: right;
   padding-top: 20px;
   font-size: 14px;
 }
 
-
-@media screen and (max-width: 576px) { 
-  .hero-content-container{
-    margin-top: 60%;
+@media screen and (max-width: 576px) {
+  .hero-content-container {
+    margin-top: 23em;
     font-size: 10px;
   }
-  .hero-content-heading{
+  .hero-content-heading {
     font-size: 35px;
     padding-top: 9px;
     text-align: center;
     padding-bottom: 11px;
     letter-spacing: 13px;
   }
-  .hero-container{
+  .hero-container {
     overflow-x: hidden;
     height: 99vh;
   }
-  .social-mediaIcon-container{
-    margin-top: 163%;
-    gap: 46px;
-   
+  .social-mediaIcon-container {
+    margin-top: 34em;
+    gap: 0.3em;
+    width: 100%;
   }
-  
-  .avvic-logo-2{
+  .social-column {
+    padding: 3px;
+  }
+
+  .avvic-logo-2 {
     width: 186px;
     height: 60px;
     margin-top: 13%;
@@ -231,10 +253,10 @@
   .info-heading2 {
     margin-top: 1%;
   }
-   .info-container{
+  .info-container {
     height: 170vh;
     overflow-x: hidden;
-   }
+  }
   .info-content-container {
     display: block;
     margin-left: auto;
@@ -242,7 +264,7 @@
     margin-top: 10%;
     width: 100%;
   }
-  .column:nth-child(2){
+  .column:nth-child(2) {
     margin-bottom: 12%;
     margin-top: 12%;
   }
@@ -261,7 +283,10 @@
     text-align: justify;
     padding: 18px;
   }
-  .footer-container{
+
+  /* FOOTER CONTENT IS BELOW */
+
+  .footer-container {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -274,47 +299,78 @@
   .footer-content {
     padding: 18px;
   }
-  
-.contact-us{
-  margin-top: 7px;
-  padding: 2px;
-  gap: 3px;
-}
 
-.contact-form {
-  width: 250px;
-  height: 42px;
-  padding: 18px;
-}
-.contact-btn {
-  width: 72px;
-  height: 42px;
-}
-.subscribe-content {
-  font-size: 11px;
-  text-decoration: underline;
-  word-break: break-all;
-}
+  .contact-us {
+    margin-top: 7px;
+    padding: 2px;
+    gap: 3px;
+  }
+
+  .contact-form {
+    width: 250px;
+    height: 42px;
+    padding: 18px;
+  }
+  .contact-btn {
+    width: 72px;
+    height: 42px;
+  }
+  .subscribe-content {
+    font-size: 11px;
+    text-decoration: underline;
+    word-break: break-all;
+  }
   .footer-icons {
     margin-top: 3px;
     margin-bottom: 4px;
     padding: 12px;
     gap: 8px;
   }
-.footer-links{
-  padding-bottom: 2px;
-}
-  .divider-content{
+  .footer-links {
+    padding-bottom: 2px;
+  }
+  .divider-content {
     display: block;
   }
-  .divider-content-item:nth-child(1){
+  .divider-content-item:nth-child(1) {
     font-size: 11px;
     padding-top: 10px;
     text-align: center;
   }
-  .divider-content-item:nth-child(2),.divider-content-item:nth-child(3){
+  .divider-content-item:nth-child(2),
+  .divider-content-item:nth-child(3) {
     text-align: center;
     padding-top: 6px;
     font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 768px) {
+  .hero-container {
+    width: 150%;
+    overflow-x: hidden;
+  }
+
+  .hero-content-container {
+    margin-top: 20em;
+    margin-left: 27em;
+    font-size: 13px;
+    letter-spacing: 6px;
+  }
+  .social-mediaIcon-container {
+    margin-top: 39em;
+    margin-left: 12em;
+  }
+
+  .info-container {
+    width: 150%;
+    overflow-x: hidden;
+  }
+  .footer-container {
+    width: 150%;
+    overflow-x: hidden;
+  }
+  .divider-container {
+    width: 150%;
   }
 }
