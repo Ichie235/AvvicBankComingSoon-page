@@ -40,30 +40,17 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 41.3em;
+  margin-top: 41.44em;
   gap: 0.6em;
   width: 100%;
 }
 .social-column {
   padding: 4px;
+  color: rgb(255, 255, 255) !important;
   border-radius: 5px;
   transition: transform 0.2s;
 }
-.social-column:nth-child(1) {
-  background-color: blue;
-}
-.social-column:nth-child(2) {
-  background-color: rgb(17, 158, 17);
-}
-.social-column:nth-child(3) {
-  background-color: purple;
-}
-.social-column:nth-child(4) {
-  background-color: rgb(91, 160, 238);
-}
-.social-column:nth-child(5) {
-  background-color: rgb(21, 21, 133);
-}
+
 .social-column:hover {
   transform: scale(1.2);
 }
