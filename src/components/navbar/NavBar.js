@@ -12,15 +12,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={AvvicLogo1} className="navbar-logo"></img>
+        <a href='/'>
+        <img src={AvvicLogo1} className="navbar-logo" alt='Avvic navbar logo'></img>
+        </a>
       </div>
 
       <div className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul className="navbar-nav">
-          <li className="nav-item"><a href="#home">Home</a></li>
+          <li className="nav-item"><a href="/">Home</a></li>
           <li className="nav-item">
             <button className='nav-btn'>
-            <a href="#about">Get Notified</a>
+            <a href="#footer-container">Get Notified</a>
             </button>
             </li>
         </ul>

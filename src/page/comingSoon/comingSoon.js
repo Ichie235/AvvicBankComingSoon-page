@@ -48,7 +48,8 @@ export class comingSoon extends Component {
               <Zoom>
                 <a
                   href="https://web.facebook.com/avvicconsults/?_rdc=1&_rdr"
-                  target={"_blank"}  rel="noreferrer" 
+                  target={"_blank"}
+                  rel="noreferrer"
                 >
                   {" "}
                   <UilFacebookF color="#CDDAD5" size="30" />
@@ -60,7 +61,8 @@ export class comingSoon extends Component {
               <Zoom>
                 <a
                   href="https://api.whatsapp.com/send/?phone=2348101098488&text&type=phone_number&app_absent=0"
-                  target={"_blank"}  rel="noreferrer" 
+                  target={"_blank"}
+                  rel="noreferrer"
                 >
                   {" "}
                   <UilWhatsapp color="#CDDAD5" size="30" />
@@ -71,7 +73,8 @@ export class comingSoon extends Component {
               <Zoom>
                 <a
                   href="https://www.instagram.com/avvicgroup/"
-                  target={"_blank"}  rel="noreferrer" 
+                  target={"_blank"}
+                  rel="noreferrer"
                 >
                   {" "}
                   <UilInstagram color="#CDDAD5" size="30" />
@@ -80,7 +83,11 @@ export class comingSoon extends Component {
             </div>
             <div className="social-column">
               <Zoom>
-                <a href="https://twitter.com/avvicgroup" target={"_blank"}  rel="noreferrer" >
+                <a
+                  href="https://twitter.com/avvicgroup"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   {" "}
                   <UilTwitterAlt color="#CDDAD5" size="30" />
                 </a>
@@ -90,7 +97,8 @@ export class comingSoon extends Component {
               <Zoom>
                 <a
                   href="https://www.linkedin.com/in/avvic-group-1b2b81231/"
-                  target={"_blank"}  rel="noreferrer" 
+                  target={"_blank"}
+                  rel="noreferrer"
                 >
                   {" "}
                   <UilLinkedinAlt color="#CDDAD5" size="30" />
@@ -150,7 +158,11 @@ export class comingSoon extends Component {
             <div class="column">
               <Zoom>
                 <figure>
-                  <img src={supportIcon} className="icon" alt="bank support"></img>
+                  <img
+                    src={supportIcon}
+                    className="icon"
+                    alt="bank support"
+                  ></img>
                 </figure>
                 <div>
                   <h3 className="info-content-heading">Support</h3>
@@ -208,10 +220,33 @@ export class comingSoon extends Component {
                 info@avvicgroup.com <br /> +2348149316300
               </p>
               <div className="footer-icons">
-                <UilFacebookF />
-                <UilTwitterAlt />
-                <UilInstagram />
-                <UilLinkedinAlt />
+                <a
+                  href="https://web.facebook.com/avvicconsults/?_rdc=1&_rdr"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <UilFacebookF color="#000000" />{" "}
+                </a>
+                <a
+                  href="https://twitter.com/avvicgroup"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <UilTwitterAlt color="#000000"/>
+                </a>
+                <a
+                  href="https://www.instagram.com/avvicgroup/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <UilInstagram color="#000000"/>
+                </a>
+                <a href="https://www.linkedin.com/in/avvic-group-1b2b81231/" target={"_blank"} rel="noreferrer">
+                  {" "}
+                  <UilLinkedinAlt color="#000000" />
+                </a>
               </div>
             </Slide>
           </div>

@@ -11,7 +11,7 @@
 .hero-container {
   width: 100%;
   height: 105vh;
-  background-image: url(../../assests/images/avvic-hero-3.png);
+  background-image: url(../../assests/images/avvic-hero-3-min.png);
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -21,7 +21,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 20.5%;
+  margin-top: 19.9%;
   color: #fff;
   font-size: 14px;
   letter-spacing: 8px;
