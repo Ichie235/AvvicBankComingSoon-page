@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../comingSoon/coming.css";
-
 // IMPORTED COMPONENTS
 import RoundClock from "../../components/clock/clock";
 import { Slide, Zoom } from "react-awesome-reveal";

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../navbar/navbar.css";
 import AvvicLogo1 from "../../assests/images/AvvicLogo-1.png";
 
+import Modal from "../modalBox/Modal";
+
 const Navbar = () => {
   // FUNCTION FOR HAMBURGER MENU (RESPONSIVE NAV BAR)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,6 +30,17 @@ const Navbar = () => {
     };
   }, []);
 
+  // THE FUNCTION BELOW HANDLES MODAL BOX OPENING
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className={scrollBackground ? "navbar--scrolled" : "navbar"}>
       <div className="navbar-logo">
@@ -46,9 +59,10 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li className="nav-item">
-            <button className="nav-btn">
+            <button className="nav-btn" onClick={handleOpenModal}>
               <a href="#footer-container">Get Notified</a>
             </button>
+            <Modal isOpen={isOpen} onClose={handleCloseModal} />
           </li>
         </ul>
       </div>
