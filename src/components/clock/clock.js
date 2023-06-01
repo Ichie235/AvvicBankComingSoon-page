@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import '../clock/clock.css'
+import React, { useState, useEffect } from "react";
+import "../clock/clock.css";
 
 const RoundClock = () => {
   const [time, setTime] = useState(new Date());
@@ -21,11 +21,11 @@ const RoundClock = () => {
     const seconds = now.getSeconds();
 
     let rotation = 0;
-    if (handType === 'hour') {
-      rotation = (hours * 30) + (minutes * 0.5);
-    } else if (handType === 'minute') {
-      rotation = (minutes * 6) + (seconds * 0.1);
-    } else if (handType === 'second') {
+    if (handType === "hour") {
+      rotation = hours * 30 + minutes * 0.5;
+    } else if (handType === "minute") {
+      rotation = minutes * 6 + seconds * 0.1;
+    } else if (handType === "second") {
       rotation = seconds * 6;
     }
 
@@ -36,17 +36,24 @@ const RoundClock = () => {
 
   return (
     <div className="clock">
-      <div className="hand hour-hand" style={getRotationStyle('hour')}></div>
-      <div className="hand minute-hand" style={getRotationStyle('minute')}></div>
-      <div className="hand second-hand" style={getRotationStyle('second')}></div>
+      <div className="hand hour-hand" style={getRotationStyle("hour")}></div>
+      <div
+        className="hand minute-hand"
+        style={getRotationStyle("minute")}
+      ></div>
+      <div
+        className="hand second-hand"
+        style={getRotationStyle("second")}
+      ></div>
       {Array.from(Array(60).keys()).map((index) => (
         <div
           key={index}
           className="minute-line"
-          style={{ transform: `rotate(${index * 150}deg) translate(-50%, -1020%)` }}
+          style={{
+            transform: `rotate(${index * 150}deg) translate(-50%, -1020%)`,
+          }}
         />
       ))}
-
     </div>
   );
 };

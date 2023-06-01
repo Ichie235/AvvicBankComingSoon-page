@@ -18,7 +18,7 @@ function Form() {
       return;
     }
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch("https://avvicbankcomingsoon-page.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,31 +53,28 @@ function Form() {
       {" "}
       <div className="contact-us">
         <form onSubmit={handleSubmit}>
-        <input
-          typeof="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          id={!isEmailValid ? "invalid" : ""}
-          className="contact-form"
-        ></input>
-  
+          <input
+            typeof="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            id={!isEmailValid ? "invalid" : ""}
+            className="contact-form"
+          ></input>
+
           {!isEmailValid && (
-              <p
-                className="error"
-                style={{ color: "red", textAlign: "center" }}
-              >
-                Please enter a valid email address.
-              </p>
-            )}
-        <button className="contact-btn">Subscribe</button>
+            <p className="error" style={{ color: "red", textAlign: "center" }}>
+              Please enter a valid email address.
+            </p>
+          )}
+          <button className="contact-btn">Subscribe</button>
         </form>
       </div>
       {showSuccessPopup && (
-            <div className={`success-popup ${showBorder ? "" : "hide-border"}`}>
-              <p>Email sent successfully!</p>
-            </div>
-          )}
+        <div className={`success-popup ${showBorder ? "" : "hide-border"}`}>
+          <p>Email sent successfully!</p>
+        </div>
+      )}
       <p className="subscribe-content">
         By subscribing you agree to with our Privacy Policy and provide consent
         to receive <br />

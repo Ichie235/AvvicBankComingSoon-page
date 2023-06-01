@@ -3,7 +3,7 @@ import "../comingSoon/coming.css";
 // IMPORTED COMPONENTS
 import RoundClock from "../../components/clock/clock";
 import { Slide, Zoom } from "react-awesome-reveal";
-import Form from "../../components/subscribeForm/Form"
+import Form from "../../components/subscribeForm/Form";
 import FotterIcon from "../../components/footerIcons/FotterIcon";
 
 // IMPORTED IMAGES AND ICON
