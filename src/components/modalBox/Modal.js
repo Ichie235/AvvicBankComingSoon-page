@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onClose }) => {
       }, 4000);
       return;
     }
-    try {
+    try { 
       const response = await fetch("https://avvicbankcomingsoon-page.onrender.com/send-email", {
         method: "POST",
         headers: {
