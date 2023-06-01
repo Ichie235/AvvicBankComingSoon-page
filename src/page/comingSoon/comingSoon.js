@@ -3,6 +3,8 @@ import "../comingSoon/coming.css";
 // IMPORTED COMPONENTS
 import RoundClock from "../../components/clock/clock";
 import { Slide, Zoom } from "react-awesome-reveal";
+import Form from "../../components/subscribeForm/Form"
+import FotterIcon from "../../components/footerIcons/FotterIcon";
 
 // IMPORTED IMAGES AND ICON
 import fastIcon from "../../assests/images/fastIcon.png";
@@ -193,19 +195,8 @@ export class comingSoon extends Component {
               <p className="footer-content">
                 Join our newsletter to stay up to date on latest information
               </p>
-              <div className="contact-us">
-                <input
-                  typeof="email"
-                  placeholder="Enter your email"
-                  className="contact-form"
-                ></input>
-                <button className="contact-btn">Subscribe</button>
-              </div>
-              <p className="subscribe-content">
-                By subscribing you agree to with our Privacy Policy and provide
-                consent to receive <br />
-                updates from our company.
-              </p>
+
+              <Form />
             </Slide>
           </div>
           <div className="footer-column">
@@ -218,55 +209,22 @@ export class comingSoon extends Component {
               <p className="footer-content">
                 info@avvicgroup.com <br /> +2348149316300
               </p>
-              <div className="footer-icons">
-                <a
-                  href="https://web.facebook.com/avvicconsults/?_rdc=1&_rdr"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <UilFacebookF color="#000000" />{" "}
-                </a>
-                <a
-                  href="https://twitter.com/avvicgroup"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <UilTwitterAlt color="#000000"/>
-                </a>
-                <a
-                  href="https://www.instagram.com/avvicgroup/"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <UilInstagram color="#000000"/>
-                </a>
-                <a href="https://www.linkedin.com/in/avvic-group-1b2b81231/" target={"_blank"} rel="noreferrer">
-                  {" "}
-                  <UilLinkedinAlt color="#000000" />
-                </a>
-              </div>
             </Slide>
           </div>
           <div className="footer-column">
             <Slide>
               <h4 className="footer-heading footer-links">Quick Links</h4>
-              <p className="footer-content footer-links">Home</p>
-              <p className="footer-content footer-links">About us</p>
-              <p className="footer-content footer-links">Open Account</p>
-              <p className="footer-content footer-links">Careers</p>
+              <FotterIcon />
             </Slide>
           </div>
         </section>
-        <div className="divider-container">
-          <div className="divider-content">
-            <p className="divider-content-item">
-              2023 Avvic Group. All rights reserved.
-            </p>
-            <p className="divider-content-item privacy">Privacy Policy</p>
-            <p className="divider-content-item terms">Terms of Service</p>
-          </div>
+        <div className="divider-container"> </div>
+        <div className="divider-content">
+          <p className="divider-content-item">
+            2023 Avvic Group. All rights reserved.
+          </p>
+          <p className="divider-content-item privacy">Privacy Policy</p>
+          <p className="divider-content-item terms">Terms of Service</p>
         </div>
       </div>
     );

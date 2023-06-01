@@ -1,0 +1,20 @@
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    padding: 5px;
+    gap: 8px;
+  }
+
+  @media screen and (max-width: 576px) {
+  .footer-icons {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3px;
+    padding: 5px;
+    gap: 8px;
+  }
+}

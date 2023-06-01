@@ -47,7 +47,11 @@
     cursor: pointer;
   }
   
-
+  .newsfeed-form{
+    width: 356px !important;
+    height: 42px;
+    padding: 10px;
+   } 
   .subscribe-btn{
     width: 118px;
   height: 45px;
@@ -56,11 +60,55 @@
   background-color: #0D9999;
   margin-top: 1em;
   }
+  .subscribe-btn:hover{
+    background-color: rgb(24, 96, 24) !important;
+  }
   
   @media screen and (max-width: 576px) {
     .newsfeed-form{
-    width: 210px;
+    width: 210px !important;
     height: 42px;
     padding: 10px;
    } 
   }
+
+/* Add this CSS to your existing CSS file or create a new file for styling */
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  border-bottom: 5px solid #00ff00;
+  color: #288628;
+  opacity: 1;
+  transition: border-color 2.5s;
+}
+
+.success-popup.hide-border {
+  border-bottom-color: transparent;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

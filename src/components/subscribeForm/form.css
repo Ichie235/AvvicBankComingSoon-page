@@ -1,0 +1,61 @@
+
+.contact-us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 9px;
+    padding: 12px;
+    gap: 8px;
+  }
+  
+  .contact-form {
+    width: 610px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 12px;
+  }
+  .contact-btn {
+    width: 120px;
+    height: 48px;
+    margin-left: 5px;
+    border-radius: 4px;
+    background-color: #ffff;
+  }
+  .contact-btn:hover{
+    background-color: rgb(24, 96, 24) !important;
+    color: #fff;
+  }
+  .subscribe-content {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #626364;
+    text-decoration: underline;
+    padding: 10px;
+  }
+
+
+  @media screen and (max-width: 576px) {
+    
+  .contact-us {
+    margin-top: 7px;
+    padding: 2px;
+    gap: 3px;
+  }
+
+  .contact-form {
+    width: 250px;
+    height: 42px;
+    padding: 18px;
+  }
+  .contact-btn {
+    width: 72px;
+    height: 42px;
+  }
+  .subscribe-content {
+    font-size: 11px;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  }
