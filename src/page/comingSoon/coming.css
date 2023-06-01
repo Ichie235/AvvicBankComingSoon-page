@@ -183,6 +183,7 @@
   margin: 0px auto 0px auto;
   height: 1px;
   background-color: black !important;
+  position: relative;
 }
 .divider-content {
   display: flex;
