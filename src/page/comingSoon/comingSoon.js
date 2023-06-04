@@ -40,7 +40,9 @@ export class comingSoon extends Component {
                   <span style={{ letterSpacing: "2px" }}> SOON!!</span>
                 </h1>
               </Slide>
+              <Slide>
               <p className="hero-content">STAY TUNED</p>
+              </Slide>
             </div>
           </div>
           <div className="social-mediaIcon-container">
@@ -53,7 +55,7 @@ export class comingSoon extends Component {
                   rel="noreferrer"
                 >
                   {" "}
-                  <UilFacebookF color="#CDDAD5" size="30" />
+                  <UilFacebookF color="#CDDAD5" size="30"  />
                 </a>
               </Zoom>
             </div>

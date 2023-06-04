@@ -148,6 +148,37 @@
     height: 12px;
   }
 }
+@media screen and (max-width: 480px){
+  .clock {
+    margin-top: 18em;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape){
+  .clock {
+   top: -8em;
+  }
+  .hour-hand {
+    height: 46px;
+  }
+  .minute-hand {
+    height: 62px;
+  }
+
+  .second-hand {
+    height: 70px;
+  }
+  .minute-line {
+   height: 10px;
+  }
+}
+
+@media only screen and (max-width: 684px) and (orientation: landscape){
+  .clock {
+    top: -7.5em;
+    left: -2.8em !important;
+   }
+}
 
 @media only screen and (min-width: 620px) and (max-width: 768px) {
   .clock {
