@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -21,16 +22,23 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 19em;
+  margin-top: 14.9em;
   color: #fff;
   font-size: 14px;
   letter-spacing: 8px;
 }
 .hero-content-heading {
-  font-size: 45px;
-  padding-top: 13px;
+  font-size: 38px;
+  padding-top: 11px;
   padding-bottom: 13px;
-  letter-spacing: 18px;
+  letter-spacing: 10px;
+}
+.hero-content{
+  font-size: 11px;
+  letter-spacing: 7px;
+}
+.stay-tuned{
+  letter-spacing: 5px;
 }
 
 .social-mediaIcon-container {
@@ -56,7 +64,11 @@
 }
 /* SECTION FOR SEAMLESS BANKING */
 .info-container {
-  height: 94vh;
+  height: 100vh;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  padding-top: 40px ;
+  padding-bottom: 60px!important;
   background: linear-gradient(90deg, #fffeff 0%, #d7fffe 100%);
   overflow-x: hidden;
 }
@@ -87,8 +99,8 @@
   /* border: 1px solid black; */
 }
 .icon {
-  width: 62.08px;
-  height: 72.5px;
+  width: 62px;
+  height: 62px;
 }
 .info-content-heading {
   color: #353c5b;
@@ -101,23 +113,28 @@
   color: #626364;
   padding: 15px;
   font-size: 16px;
+  text-align: justify;
   line-height: 24px;
 }
 
 .avvic-logo-2-container {
   display: flex;
   justify-content: flex-start;
+  padding-top: 40px;
+  padding-left: 60px !important;
 }
 .avvic-logo-2 {
   width: 196px;
   height: 64px;
-  margin-left: 20px;
 }
 
 .footer-container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  padding-bottom: 60px!important;
   margin-top: 1%;
   width: 100%;
 }
@@ -175,16 +192,23 @@
 
 @media screen and (max-width: 576px) {
   .hero-content-container {
-    margin-top: 23em;
+    margin-top: 21.7em !important;
     margin-left: 1.5em;
     font-size: 10px;
   }
   .hero-content-heading {
-    font-size: 32px;
+    font-size: 24px;
     padding-top: 9px;
     text-align: center;
     padding-bottom: 11px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+  }
+  .hero-content{
+    font-size: 9px;
+    letter-spacing: 7px;
+  }
+  .stay-tuned{
+    letter-spacing: 5px;
   }
   .hero-container {
     overflow-x: hidden;
@@ -213,15 +237,16 @@
     margin-top: 1%;
   }
   .info-container {
+    padding-top: 22px !important;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
     height: 170vh;
     overflow-x: hidden;
   }
   .info-content-container {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    width: 100%;
+    margin-top: 13%;
   }
   .column:nth-child(2) {
     margin-bottom: 12%;
@@ -233,22 +258,23 @@
   }
   .info-content-heading {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 3%;
   }
   .info-content {
-    padding: 5px;
     line-height: 28px;
     text-align: justify;
-    padding: 18px;
+   padding-top: 10px;
+   font-size: 12px;
   }
 
   /* FOOTER CONTENT IS BELOW */
-
+  .avvic-logo-2-container {
+    padding-top: 20px;
+  }
   .footer-container {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 7px;
     margin-top: 8%;
     overflow-x: hidden;
   }
@@ -358,6 +384,10 @@
 
   .info-container {
     width: 100%;
+    padding-top: 60px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-bottom: 40px!important;
     overflow-x: hidden;
   }
   .footer-container {

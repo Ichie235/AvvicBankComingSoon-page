@@ -30,8 +30,8 @@ export class comingSoon extends Component {
 
             <div className="hero-content-container">
               <Slide>
-                <p>
-                  SOMETHING AWESOME <br /> IS
+                <p className="hero-content">
+                  SOMETHING <br />  <span style={{ lineHeight: "28px" }}>AWESOME</span> <br /> IS
                 </p>
               </Slide>
               <Slide direction={"right"}>
@@ -41,7 +41,7 @@ export class comingSoon extends Component {
                 </h1>
               </Slide>
               <Slide>
-              <p className="hero-content">STAY TUNED</p>
+              <p className="hero-content stay-tuned">STAY TUNED</p>
               </Slide>
             </div>
           </div>
@@ -171,7 +171,7 @@ export class comingSoon extends Component {
                   <h3 className="info-content-heading">Support</h3>
                   <p className="info-content">
                     {" "}
-                    our support team is available to provide prompt and
+                    Our support team is available to provide prompt and
                     personalized assistance, ensuring you receive the best{" "}
                     possible customer experience.
                   </p>

@@ -16,7 +16,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 750; // Change this value to adjust when the background color changes
+      const threshold = 635; // Change this value to adjust when the background color changes
 
       if (scrollPosition > threshold) {
         setScrollBackground(true);
@@ -60,7 +60,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <button className="nav-btn" onClick={handleOpenModal}>
-              <a href="#footer-container">Get Notified</a>
+              Get Notified
             </button>
             <Modal isOpen={isOpen} onClose={handleCloseModal} />
           </li>

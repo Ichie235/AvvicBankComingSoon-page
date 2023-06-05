@@ -50,7 +50,7 @@ const RoundClock = () => {
           key={index}
           className="minute-line"
           style={{
-            transform: `rotate(${index * 150}deg) translate(-50%, -1020%)`,
+            transform: `rotate(${index * 150}deg) translate(-50%, -970%)`,
           }}
         />
       ))}
