@@ -12,6 +12,7 @@
 .hero-container {
   width: 100%;
   height: 105vh;
+  position: relative;
   background-image: url(../../assests/images/avvic-hero-3-min.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -327,7 +328,11 @@
 }
 
 
-@media only screen and (max-width: 768px) and (orientation: landscape){
+@media only screen and (max-width: 874px) and (orientation: landscape){
+  .hero-container {
+    width: 100%;
+    height: 115vh !important;
+  }
   .hero-content-container {
     top: -9em;
     margin-left: auto !important;

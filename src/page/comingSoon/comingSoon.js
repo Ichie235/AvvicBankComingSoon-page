@@ -31,7 +31,7 @@ export class comingSoon extends Component {
             <div className="hero-content-container">
               <Slide>
                 <p className="hero-content">
-                  SOMETHING <br />  AWESOME <br /> IS
+                  SOMETHING <br />  AWESOME IS
                 </p>
               </Slide>
               <Slide direction={"right"}>

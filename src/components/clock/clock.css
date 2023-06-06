@@ -177,6 +177,7 @@
   }
 }
 
+
 @media only screen and (max-width: 684px) and (orientation: landscape){
   .clock {
     top: -7.5em;
@@ -185,9 +186,10 @@
 }
 
 
+
+
 @media only screen and (min-width: 620px) and (max-width: 768px) {
   .clock {
     margin-top: 27.7em;
-    background: linear-gradient(90deg, #29323c 0%, #485563 100%);
   }
 }
