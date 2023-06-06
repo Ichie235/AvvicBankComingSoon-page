@@ -73,6 +73,7 @@
   padding-bottom: 60px!important;
   background: linear-gradient(90deg, #fffeff 0%, #d7fffe 100%);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .info-heading {
   font-size: 48px;
@@ -89,7 +90,7 @@
 .info-content-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 6%;
   width: 100%;
 }
