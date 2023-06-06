@@ -168,6 +168,7 @@
   width: 98%;
   margin: 0px auto 0px auto;
   height: 1px;
+  padding-bottom: 10px;
   background-color: black !important;
   /* position: relative; */
 }
@@ -270,11 +271,16 @@
 
   /* FOOTER CONTENT IS BELOW */
   .avvic-logo-2-container {
-    padding-top: 20px;
+    padding-top: 17px;
+    padding-left: 5px ! important;
   }
   .footer-container {
     display: block;
-    padding: 7px;
+    padding-left: 5px !important;
+
+    padding-right: 5px ! important;
+
+    padding-bottom: 5px ! important;
     margin-top: 8%;
     overflow-x: hidden;
   }
