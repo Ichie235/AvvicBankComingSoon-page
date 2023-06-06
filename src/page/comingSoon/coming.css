@@ -167,13 +167,12 @@
   width: 98%;
   margin: 0px auto 0px auto;
   height: 1px;
-  padding-bottom: 10px;
   background-color: black !important;
 }
 .divider-content {
   display: flex;
   justify-content: center;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
   padding-left: 60px !important;
   padding-right: 60px !important;
 }
