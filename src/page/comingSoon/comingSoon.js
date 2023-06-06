@@ -145,7 +145,7 @@ export class comingSoon extends Component {
                 <figure>
                   <img
                     src={fastIcon}
-                    className="icon"
+                    className="second-icon"
                     alt="fast transaction icon"
                   ></img>
                 </figure>
