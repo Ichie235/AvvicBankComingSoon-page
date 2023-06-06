@@ -42,34 +42,41 @@
   }
 
   .contact-form {
-    width: 180px;
+    width: 190px;
     height: 42px;
     padding: 18px;
+    margin-left: 12px !important;
   }
   .contact-btn {
     width: 72px;
     height: 42px;
+    padding: 1px;
   }
   .subscribe-content {
     font-size: 11px;
     text-decoration: underline;
-    word-break: break-all;
+    word-break: break-word;
+    
   }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape){
+@media only screen and (max-width: 798px) and (orientation: landscape){
   .contact-form {
-    width: 250px !important;
-  }
-}
-
-@media only screen and (max-width: 684px) and (orientation: landscape){
-  .contact-form {
-    width: 200px !important;
+    width: 185px !important;
   }
   .contact-btn {
-    width: 100px !important;
-    height: 48px;
+   font-size: 12px;
+  }
+ 
+}
+
+@media only screen and (min-width: 610px) and (max-width: 684px) and (orientation: landscape){
+  .contact-form {
+    width: 160px !important;
+  }
+  .contact-btn {
+    width: 70px !important;
+    height: 30px;
   }
 }
 

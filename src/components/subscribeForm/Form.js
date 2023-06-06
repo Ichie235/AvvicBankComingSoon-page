@@ -77,8 +77,7 @@ function Form() {
       )}
       <p className="subscribe-content">
         By subscribing you agree to with our Privacy Policy and provide consent
-        to receive <br />
-        updates from our company.
+        to receive updates from  our <br/> company.
       </p>
     </>
   );

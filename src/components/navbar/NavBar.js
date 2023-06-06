@@ -16,7 +16,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 635; // Change this value to adjust when the background color changes
+      const threshold = 370; // Change this value to adjust when the background color changes
 
       if (scrollPosition > threshold) {
         setScrollBackground(true);

@@ -22,10 +22,10 @@
   position: absolute;
   left: 0;
   right: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 14.9em;
   color: #fff;
-  font-size: 14px;
-  letter-spacing: 8px;
 }
 .hero-content-heading {
   font-size: 38px;
@@ -36,6 +36,7 @@
 .hero-content{
   font-size: 11px;
   letter-spacing: 7px;
+  line-height: 28px;
 }
 .stay-tuned{
   letter-spacing: 5px;
@@ -49,13 +50,13 @@
   left: 0;
   right: 0;
   margin-top: 41.44em;
-  gap: 0.6em;
+  gap: 0.5em;
   width: 100%;
 }
 .social-column {
   padding: 4px;
+  align-self: baseline;
   color: rgb(255, 255, 255) !important;
-  border-radius: 5px;
   transition: transform 0.2s;
 }
 
@@ -96,11 +97,10 @@
 .column:nth-child(2),
 .column:nth-child(3) {
   flex: 1;
-  /* border: 1px solid black; */
 }
 .icon {
-  width: 62px;
-  height: 62px;
+  width: 60px;
+  height: 55px;
 }
 .info-content-heading {
   color: #353c5b;
@@ -111,10 +111,9 @@
 }
 .info-content {
   color: #626364;
-  padding: 15px;
+  padding: 23px;
   font-size: 16px;
-  text-align: justify;
-  line-height: 24px;
+  text-align: center;
 }
 
 .avvic-logo-2-container {
@@ -132,7 +131,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 60px !important;
+  padding-left: 65px !important;
   padding-right: 60px !important;
   padding-bottom: 60px!important;
   margin-top: 1%;
@@ -169,11 +168,13 @@
   margin: 0px auto 0px auto;
   height: 1px;
   background-color: black !important;
-  /* position: relative; */
 }
 .divider-content {
   display: flex;
   justify-content: center;
+  padding-bottom: 25px;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
 }
 .divider-content-item:nth-child(1) {
   flex: 2.3;
@@ -192,22 +193,24 @@
 
 @media screen and (max-width: 576px) {
   .hero-content-container {
-    margin-top: 21.7em !important;
-    margin-left: 1.5em;
-    font-size: 10px;
+    margin-top: 13.6em !important;
   }
   .hero-content-heading {
-    font-size: 24px;
-    padding-top: 9px;
+    font-size: 20px;
+    padding-top: 7px;
     text-align: center;
-    padding-bottom: 11px;
-    letter-spacing: 5px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    letter-spacing: 4px;
   }
   .hero-content{
-    font-size: 9px;
-    letter-spacing: 7px;
+    font-size: 8px;
+    letter-spacing: 6px;
+    line-height: 15px;
+    transform: bottom;
   }
   .stay-tuned{
+    padding-top: 0;
     letter-spacing: 5px;
   }
   .hero-container {
@@ -238,10 +241,10 @@
   }
   .info-container {
     padding-top: 22px !important;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    height: 170vh;
+    padding-left: 5px !important;
+    padding-right: 5px ! important;
+    padding-bottom: 5px ! important;
+    height: auto;
     overflow-x: hidden;
   }
   .info-content-container {
@@ -270,11 +273,16 @@
 
   /* FOOTER CONTENT IS BELOW */
   .avvic-logo-2-container {
-    padding-top: 20px;
+    padding-top: 17px;
+    padding-left: 5px ! important;
   }
   .footer-container {
     display: block;
-    padding: 7px;
+    padding-left: 5px !important;
+
+    padding-right: 5px ! important;
+
+    padding-bottom: 5px ! important;
     margin-top: 8%;
     overflow-x: hidden;
   }
@@ -322,21 +330,27 @@
 @media only screen and (max-width: 768px) and (orientation: landscape){
   .hero-content-container {
     top: -9em;
-    margin-left: 3em;
-    font-size: 12px;
-    letter-spacing: 4px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .hero-content-heading {
-    font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    letter-spacing: 15px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    letter-spacing: 10px;
+  }
+  .hero-content{
+    font-size: 9px;
+    letter-spacing: 7px;
+    line-height: 20px;
   }
   .social-mediaIcon-container {
-    top: -17.3em;
+    top: -16em;
   }
   .info-container {
-    height: 110vh;
+    height: auto;
+    padding-left: 45px !important;
+    padding-right: 45px !important;
   }
   .info-heading {
     font-size: 35px;
@@ -348,13 +362,13 @@
     height: 50px;
   }
   .info-content-heading {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 4%;
   }
   .info-content {
-    padding: 10px;
+    padding: 15px;
     font-size: 13px;
-     text-align: left;
+     text-align: center;
   }  
  .footer-content{
   font-size: 11px;
@@ -363,6 +377,20 @@
  .divider-content-item:nth-child(3) {
    font-size: 10px;
  }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape){
+  .hero-container {
+     height: 150vh ;
+  }
+  .hero-content-container {
+    top: -1.7em;
+    left: -2em;
+  }
+  .social-mediaIcon-container {
+    top: -10em;
+    left: -2em;
+  }
 }
 
 @media only screen and (min-width: 620px) and (max-width: 768px) {

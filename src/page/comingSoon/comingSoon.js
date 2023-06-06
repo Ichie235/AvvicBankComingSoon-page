@@ -15,7 +15,7 @@ import {
   UilFacebookF,
   UilTwitterAlt,
   UilInstagram,
-  UilLinkedinAlt,
+  UilLinkedin,
   UilWhatsapp,
 } from "@iconscout/react-unicons";
 
@@ -31,13 +31,13 @@ export class comingSoon extends Component {
             <div className="hero-content-container">
               <Slide>
                 <p className="hero-content">
-                  SOMETHING <br />  <span style={{ lineHeight: "28px" }}>AWESOME</span> <br /> IS
+                  SOMETHING <br />  AWESOME <br /> IS
                 </p>
               </Slide>
               <Slide direction={"right"}>
                 <h1 className="hero-content-heading">
                   COMING <br />{" "}
-                  <span style={{ letterSpacing: "2px" }}> SOON!!</span>
+                  <span className="hero-content-heading"style={{ letterSpacing: "2px" }}> SOON!!</span>
                 </h1>
               </Slide>
               <Slide>
@@ -86,25 +86,26 @@ export class comingSoon extends Component {
             </div>
             <div className="social-column">
               <Zoom>
-                <a
-                  href="https://twitter.com/avvicgroup"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <UilTwitterAlt color="#CDDAD5" size="30" />
-                </a>
-              </Zoom>
-            </div>
-            <div className="social-column">
-              <Zoom>
+               
                 <a
                   href="https://www.linkedin.com/in/avvic-group-1b2b81231/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
                   {" "}
-                  <UilLinkedinAlt color="#CDDAD5" size="30" />
+                  <UilLinkedin color="#CDDAD5" size="30.2" />
+                </a>
+              </Zoom>
+            </div>
+            <div className="social-column">
+              <Zoom>
+              <a
+                  href="https://twitter.com/avvicgroup"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <UilTwitterAlt color="#CDDAD5" size="30" />
                 </a>
               </Zoom>
             </div>
@@ -197,7 +198,7 @@ export class comingSoon extends Component {
               <p className="footer-content">
                 Join our newsletter to stay up to date on latest information
               </p>
-
+              {/* FORM COMPONENT IS HERE BELOW */}
               <Form />
             </Slide>
           </div>
