@@ -11,9 +11,9 @@
 
 .hero-container {
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   position: relative;
-  background-image: url(../../assests/images/avvic-hero-3-min.png);
+  background-image: url(../../assests/images/avvic-hero-desktop.png);
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -34,12 +34,12 @@
   padding-bottom: 13px;
   letter-spacing: 10px;
 }
-.hero-content{
+.hero-content {
   font-size: 11px;
   letter-spacing: 7px;
   line-height: 28px;
 }
-.stay-tuned{
+.stay-tuned {
   letter-spacing: 5px;
 }
 
@@ -57,7 +57,6 @@
 .social-column {
   padding: 4px;
   align-self: baseline;
-  color: rgb(255, 255, 255) !important;
   transition: transform 0.2s;
 }
 
@@ -69,8 +68,8 @@
   height: 100vh;
   padding-left: 60px !important;
   padding-right: 60px !important;
-  padding-top: 30px ;
-  padding-bottom: 60px!important;
+  padding-top: 30px;
+  padding-bottom: 60px !important;
   background: linear-gradient(90deg, #fffeff 0%, #d7fffe 100%);
   overflow-x: hidden;
   overflow-y: hidden;
@@ -104,6 +103,10 @@
   width: 60px;
   height: 55px;
 }
+.second-icon {
+  width: 70.67px !important;
+  height: 52.67px;
+}
 .info-content-heading {
   color: #353c5b;
   font-weight: 700;
@@ -135,7 +138,7 @@
   align-items: flex-start;
   padding-left: 65px !important;
   padding-right: 60px !important;
-  padding-bottom: 60px!important;
+  padding-bottom: 60px !important;
   margin-top: 1%;
   width: 100%;
 }
@@ -198,7 +201,7 @@
     background-image: url(../../assests/images/avvic-hero-mobile-2.png);
     background-position: center;
   }
-  
+
   .hero-content-container {
     margin-top: 13.6em !important;
   }
@@ -210,20 +213,17 @@
     padding-bottom: 15px;
     letter-spacing: 4px;
   }
-  .hero-content{
+  .hero-content {
     font-size: 8px;
     letter-spacing: 6px;
     line-height: 15px;
     transform: bottom;
   }
-  .stay-tuned{
+  .stay-tuned {
     padding-top: 0;
     letter-spacing: 5px;
   }
-  .hero-container {
-    overflow-x: hidden;
-    height: 99vh;
-  }
+
   .social-mediaIcon-container {
     margin-top: 34em;
     gap: 0.3em;
@@ -249,8 +249,8 @@
   .info-container {
     padding-top: 22px !important;
     padding-left: 5px !important;
-    padding-right: 5px ! important;
-    padding-bottom: 5px ! important;
+    padding-right: 5px !important;
+    padding-bottom: 5px !important;
     height: auto;
     overflow-x: hidden;
   }
@@ -266,10 +266,7 @@
     width: 45.08px;
     height: 52.5px;
   }
-  .second-icon{
-    width: 35.67px !important;
-    height: 46.67px;
-  }
+  
   .info-content-heading {
     font-weight: 500;
     font-size: 25px;
@@ -278,22 +275,22 @@
   .info-content {
     line-height: 28px;
     text-align: justify;
-   padding-top: 10px;
-   font-size: 12px;
+    padding-top: 10px;
+    font-size: 12px;
   }
 
   /* FOOTER CONTENT IS BELOW */
   .avvic-logo-2-container {
     padding-top: 17px;
-    padding-left: 5px ! important;
+    padding-left: 5px !important;
   }
   .footer-container {
     display: block;
     padding-left: 5px !important;
 
-    padding-right: 5px ! important;
+    padding-right: 5px !important;
 
-    padding-bottom: 5px ! important;
+    padding-bottom: 5px !important;
     margin-top: 8%;
     overflow-x: hidden;
   }
@@ -323,32 +320,31 @@
     font-size: 11px;
   }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .hero-container {
     width: 100%;
-    height: 97vh;
+    height: 94vh;
   }
   .hero-content-container {
     margin-top: 24.6em;
-   position: absolute;
-   right: 0;
-   left: 0;
-   margin-left: auto;
-   margin-right: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social-mediaIcon-container {
     margin-top: 36em;
   }
 }
 
-
-@media only screen and (max-width: 874px) and (orientation: landscape){
+@media only screen and (max-width: 874px) and (orientation: landscape) {
   .hero-container {
     width: 100%;
     height: 115vh !important;
   }
   .hero-content-container {
-    top: -9em;
+    top: -12em;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -358,7 +354,7 @@
     padding-bottom: 8px;
     letter-spacing: 10px;
   }
-  .hero-content{
+  .hero-content {
     font-size: 9px;
     letter-spacing: 7px;
     line-height: 20px;
@@ -387,59 +383,46 @@
   .info-content {
     padding: 15px;
     font-size: 13px;
-     text-align: center;
-  }  
- .footer-content{
-  font-size: 11px;
- }
- .divider-content-item:nth-child(2),
- .divider-content-item:nth-child(3) {
-   font-size: 10px;
- }
-}
-
-@media only screen and (max-width: 667px) and (orientation: landscape){
-  .hero-container {
-     height: 150vh ;
+    text-align: center;
   }
-  .hero-content-container {
-    top: -1.7em;
-    left: -2em;
+  .footer-content {
+    font-size: 11px;
   }
-  .social-mediaIcon-container {
-    top: -10em;
-    left: -2em;
+  .divider-content-item:nth-child(2),
+  .divider-content-item:nth-child(3) {
+    font-size: 10px;
   }
 }
 
-@media only screen and (min-width: 620px) and (max-width: 768px) {
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 620px) and (max-width: 785px) {
   .hero-container {
-    width: 100%;
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .hero-content-container {
-    margin-top: 19em;
-    margin-left: 3em;
+    margin-top: 23.5em;
     font-size: 13px;
     letter-spacing: 6px;
   }
   .social-mediaIcon-container {
-    margin-top: 39em;
-    margin-left: 1em;
+    margin-top: 55em;
   }
 
   .info-container {
     width: 100%;
     padding-top: 60px !important;
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-    padding-bottom: 40px!important;
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+    padding-bottom: 40px !important;
     overflow-x: hidden;
   }
   .footer-container {
-    width: 100%;
-    overflow-x: hidden;
+    padding-top: 60px !important;
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+    padding-bottom: 40px !important;
   }
   .divider-container {
     width: 100%;

@@ -142,10 +142,9 @@
     height: 70px;
   }
   .navbar-logo {
-    font-weight: bold;
-    width: 150px;
-    height: 60px;
-    padding: 5px;
+    width: 120px;
+    height: 38px;
+    padding: 2px;
   }
   .nav-btn {
     padding: 9px 25px 9px 25px;
