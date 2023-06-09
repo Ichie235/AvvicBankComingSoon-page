@@ -3,8 +3,7 @@ import "../comingSoon/coming.css";
 // IMPORTED COMPONENTS
 import RoundClock from "../../components/clock/clock";
 import { Slide, Zoom } from "react-awesome-reveal";
-import Form from "../../components/subscribeForm/Form";
-import FotterIcon from "../../components/footerIcons/FotterIcon";
+import Footer from "../../components/footer/Footer";
 
 // IMPORTED IMAGES AND ICON
 import fastIcon from "../../assests/images/fastIcon.png";
@@ -31,17 +30,23 @@ export class comingSoon extends Component {
             <div className="hero-content-container">
               <Slide>
                 <p className="hero-content">
-                  SOMETHING <br />  AWESOME IS
+                  SOMETHING <br /> AWESOME IS
                 </p>
               </Slide>
               <Slide direction={"right"}>
                 <h1 className="hero-content-heading">
                   COMING <br />{" "}
-                  <span className="hero-content-heading"style={{ letterSpacing: "2px" }}> SOON!!</span>
+                  <span
+                    className="hero-content-heading"
+                    style={{ letterSpacing: "2px" }}
+                  >
+                    {" "}
+                    SOON!!
+                  </span>
                 </h1>
               </Slide>
               <Slide>
-              <p className="hero-content stay-tuned">STAY TUNED</p>
+                <p className="hero-content stay-tuned">STAY TUNED</p>
               </Slide>
             </div>
           </div>
@@ -55,7 +60,7 @@ export class comingSoon extends Component {
                   rel="noreferrer"
                 >
                   {" "}
-                  <UilFacebookF color="#CDDAD5" size="30"  />
+                  <UilFacebookF color="#CDDAD5" size="30" />
                 </a>
               </Zoom>
             </div>
@@ -86,7 +91,6 @@ export class comingSoon extends Component {
             </div>
             <div className="social-column">
               <Zoom>
-               
                 <a
                   href="https://www.linkedin.com/in/avvic-group-1b2b81231/"
                   target={"_blank"}
@@ -99,7 +103,7 @@ export class comingSoon extends Component {
             </div>
             <div className="social-column">
               <Zoom>
-              <a
+                <a
                   href="https://twitter.com/avvicgroup"
                   target={"_blank"}
                   rel="noreferrer"
@@ -191,44 +195,7 @@ export class comingSoon extends Component {
             ></img>
           </figure>
         </section>
-        <section className="footer-container">
-          <div className="footer-column">
-            <Slide direction={"right"}>
-              <h4 className="footer-heading">Subscribe</h4>
-              <p className="footer-content">
-                Join our newsletter to stay up to date on latest information
-              </p>
-              {/* FORM COMPONENT IS HERE BELOW */}
-              <Form />
-            </Slide>
-          </div>
-          <div className="footer-column">
-            <Slide>
-              <h4 className="footer-heading">Address:</h4>
-              <p className="footer-content">
-                House B1, Rose Gardens Courts,Rangers Avenue, Enugu. Nigeria
-              </p>
-              <h4 className="footer-heading">Contact:</h4>
-              <p className="footer-content">
-                info@avvicgroup.com <br /> +2348149316300
-              </p>
-            </Slide>
-          </div>
-          <div className="footer-column">
-            <Slide>
-              <h4 className="footer-heading footer-links">Quick Links</h4>
-              <FotterIcon />
-            </Slide>
-          </div>
-        </section>
-        <div className="divider-container"> </div>
-        <div className="divider-content">
-          <p className="divider-content-item">
-            2023 Avvic Group. All rights reserved.
-          </p>
-          <p className="divider-content-item privacy">Privacy Policy</p>
-          <p className="divider-content-item terms">Terms of Service</p>
-        </div>
+        <Footer />
       </div>
     );
   }

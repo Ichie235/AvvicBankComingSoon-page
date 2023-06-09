@@ -61,13 +61,12 @@ function Form() {
             id={!isEmailValid ? "invalid" : ""}
             className="contact-form"
           ></input>
-
+          <button className="contact-btn">Subscribe</button>
           {!isEmailValid && (
             <p className="error" style={{ color: "red", textAlign: "center" }}>
               Please enter a valid email address.
             </p>
           )}
-          <button className="contact-btn">Subscribe</button>
         </form>
       </div>
       {showSuccessPopup && (

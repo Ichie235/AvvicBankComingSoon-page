@@ -129,12 +129,7 @@
   .clock {
     width: 13px;
     height: 13px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 17em;
+    margin-top: 21.7em !important;
   }
 
   .hour-hand {
