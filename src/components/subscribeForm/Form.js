@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../../components/subscribeForm/form.css";
 
 function Form() {
+  const form = useRef();
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
-  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
-  const [showBorder, setShowBorder] = useState(true);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!validateEmail(email)) {
+    if (validateEmail(email)) {
+      setIsEmailValid(true);
+      setEmail("");
+    } else {
       setIsEmailValid(false);
       setTimeout(() => {
         setIsEmailValid(true);
@@ -18,30 +23,30 @@ function Form() {
       return;
     }
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-      if (response.ok) {
-        setEmail("");
-        setShowSuccessPopup(true);
-
-        setTimeout(() => {
-          setShowSuccessPopup(false);
-        }, 3000);
-
-        setTimeout(() => {
-          setShowBorder(false);
-        }, 2000);
-      } else {
-        alert("Failed to send email.");
-      }
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_YOUR_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            toast.success("Email sent successfully!", {
+              position: toast.POSITION.TOP_CENTER,
+            });
+          },
+          (error) => {
+            toast.warning("Email not sent", {
+              position: toast.POSITION.TOP_CENTER,
+            });
+          }
+        );
     } catch (error) {
       console.error(error);
-      alert("Failed to send email.");
+      toast.warning("Failed to send email", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     }
   };
   const validateEmail = (email) => {
@@ -52,7 +57,7 @@ function Form() {
     <>
       {" "}
       <div className="contact-us">
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <input
             typeof="email"
             placeholder="Enter your email"
@@ -68,15 +73,11 @@ function Form() {
             </p>
           )}
         </form>
+        <ToastContainer />
       </div>
-      {showSuccessPopup && (
-        <div className={`success-popup ${showBorder ? "" : "hide-border"}`}>
-          <p>Email sent successfully!</p>
-        </div>
-      )}
       <p className="subscribe-content">
         By subscribing you agree to with our Privacy Policy and provide consent
-        to receive updates from  our <br/> company.
+        to receive updates from our <br /> company.
       </p>
     </>
   );

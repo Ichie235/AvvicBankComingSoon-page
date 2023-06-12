@@ -3,7 +3,7 @@ import "../comingSoon/coming.css";
 // IMPORTED COMPONENTS
 import RoundClock from "../../components/clock/clock";
 import { Slide, Zoom } from "react-awesome-reveal";
-import Footer from "../../components/footer/Footer";
+
 
 // IMPORTED IMAGES AND ICON
 import fastIcon from "../../assests/images/fastIcon.png";
@@ -195,7 +195,7 @@ export class comingSoon extends Component {
             ></img>
           </figure>
         </section>
-        <Footer />
+ 
       </div>
     );
   }

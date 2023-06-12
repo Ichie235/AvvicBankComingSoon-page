@@ -1,62 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../modalBox/modal.css";
-//import axios from 'axios'
 
 const Modal = ({ isOpen, onClose }) => {
-  // THE COMMENTED CODE BELOW IS NOT IN USE
-  // const [name,setName] =  useState("")
-
-  // async function postName(e){
-  //   e.preventDefault()
-  //   try{
-  //     await axios.post("http://localhost:5000/post_name",{
-  //       name
-  //     })
-  //   }catch (error){
-  //       console.log(error)
-  //   }
-  // }
+  const form = useRef();
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
-  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
-  const [showBorder, setShowBorder] = useState(true);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
+    if (validateEmail(email)) {
+      setIsEmailValid(true);
+      setEmail("");
+    } else {
       setIsEmailValid(false);
       setTimeout(() => {
         setIsEmailValid(true);
       }, 4000);
       return;
     }
-    try { 
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        setEmail("");
-        setShowSuccessPopup(true);
-
-        setTimeout(() => {
-          setShowSuccessPopup(false);
-        }, 3000);
-
-        setTimeout(() => {
-          setShowBorder(false);
-        }, 2000);
-      } else {
-        alert("Failed to send email.");
-      }
+    try {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_YOUR_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            toast.success("Email sent successfully!", {
+              position: toast.POSITION.TOP_CENTER,
+            });
+          },
+          (error) => {
+            toast.warning("Email not sent", {
+              position: toast.POSITION.TOP_CENTER,
+            });
+          }
+        );
     } catch (error) {
       console.error(error);
-      alert("Failed to send email.");
+      toast.warning("Failed to send email", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     }
   };
   const validateEmail = (email) => {
@@ -72,10 +63,11 @@ const Modal = ({ isOpen, onClose }) => {
         <h2>Subscribe</h2>
         <p> Join our newsletter to stay up to date on latest information.</p>
         <div className="contact-us">
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <input
               typeof="email"
               placeholder="Enter your email"
+              name="user_email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               id={!isEmailValid ? "invalid" : ""}
@@ -94,16 +86,7 @@ const Modal = ({ isOpen, onClose }) => {
               Subscribe
             </button>
           </form>
-          {showSuccessPopup && (
-            <div className={`success-popup ${showBorder ? "" : "hide-border"}`}>
-              <p>Email sent successfully!</p>
-            </div>
-          )}
-          {/* THE COMMENTED CODE BELOW IS NOT IN USE */}
-          {/* <form onSubmit={postName} style={{position:'relative',zIndex:'99999999'}}>
-        <input type="text" value={name} onChange={(e)=> setName(e.target.value)}></input>
-        <button type="submit">Send name</button>
-      </form> */}
+          <ToastContainer />
         </div>
       </div>
     </div>

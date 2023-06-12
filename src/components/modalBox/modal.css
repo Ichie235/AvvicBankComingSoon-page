@@ -75,29 +75,6 @@
   }
 }
 
-/* Add this CSS to your existing CSS file or create a new file for styling */
-
-.success-popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  border-bottom: 5px solid #00ff00;
-  color: #288628;
-  opacity: 1;
-  transition: border-color 2.5s;
-}
-
-.success-popup.hide-border {
-  border-bottom-color: transparent;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
