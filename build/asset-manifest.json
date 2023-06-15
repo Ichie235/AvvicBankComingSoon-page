@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d45cfbc5.css",
+    "main.js": "/static/js/main.b2ffb3ad.js",
+    "static/media/avvic-hero-desktop.png": "/static/media/avvic-hero-desktop.4889a20d8ce80983a650.png",
+    "static/media/avvic-hero-mobile-2.png": "/static/media/avvic-hero-mobile-2.fb3a058655d2aa3818fb.png",
+    "static/media/AvvicLogo-1.png": "/static/media/AvvicLogo-1.82c6f4d743526e97c564.png",
+    "index.html": "/index.html",
+    "main.d45cfbc5.css.map": "/static/css/main.d45cfbc5.css.map",
+    "main.b2ffb3ad.js.map": "/static/js/main.b2ffb3ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d45cfbc5.css",
+    "static/js/main.b2ffb3ad.js"
+  ]
+}

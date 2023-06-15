@@ -1,0 +1,15 @@
+{
+  "short_name": "React App",
+  "icons":[
+    {
+      "src": "Avvic-icon.png",
+      "type": "image/png",
+      "size": "950x950"
+    }
+  ],
+  "name": "Create React App Sample",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
